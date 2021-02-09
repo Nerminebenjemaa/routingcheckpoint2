@@ -1,5 +1,31 @@
-<h1>First Component</h1>
+<!-- <h1>First Component</h1>
 <a [routerLink]="['first']">Ma premiere page</a>
 <router-outlet></router-outlet>
 <h1> Second Component</h1>
-<a [routerLink]="['second']">Ma deuxieme page</a>
+<a [routerLink]="['second']">Ma deuxieme page</a> -->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['first']"  routerLinkActive="active">First</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['second']" routerLinkActive="active">Second</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['third']" routerLinkActive="active">Third</a>
+      </li>
+    </ul>
+  
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
